@@ -1,0 +1,13 @@
+.footer {
+  background: url("../img/footer/footer.png") no-repeat;
+  background-size: cover;
+  color: #fff;
+  .outer {
+    background-color: rgba(57, 63, 70, 0.85);
+    padding: 1rem 2rem 3rem 2rem;
+  }
+  img {
+    height: 2rem;
+    margin: 1.5rem 0;
+  }
+}

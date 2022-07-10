@@ -1,0 +1,80 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import "_var.scss";
+@import "_mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import "home.scss";
+@import "features.scss";
+@import "portfolio.scss";
+@import "price.scss";
+@import "team.scss";
+@import "skills.scss";
+@import "clients.scss";
+@import "footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  padding: env(safe-area-inset);
+  body {
+    overflow-x: hidden;
+    font-family: $mainFont;
+  }
+  
+  [class*="col-"]{
+      padding: 1rem;
+  }
+  button:focus,
+  a:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  button,
+  a,
+  a.btn,
+  .svg-inline--fa {
+    transition: all 0.6s ease;
+  }
+  .text-nuno {
+    color: $secondaryFontColor;
+  }
+  .btn-sm {
+    border-radius: 0;
+    border-width: medium;
+    padding: 0.5rem 1.1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 1rem;
+  }
+  .offset::before {
+    content: "";
+    height: 4rem;
+    display: block;
+    margin-top: -4rem;
+  }
+  .heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 1.9rem;
+  }
+  .heading-underline {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: $secondaryFontColor;
+    margin: 0 auto 2rem;
+  }
+
+  button.owl-dot.active {
+    span {
+      background: $secondaryFontColor !important;
+    }
+  }
+  .footer ul.social li a{
+    color: #fff;
+}
+.footer ul.social li a:hover{
+    color: $secondaryFontColor;
+}
+}

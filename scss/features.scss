@@ -1,0 +1,70 @@
+#features {
+  .row {
+    .btn-nuno {
+      background-color: $secondaryFontColor;
+      color: #fff;
+      &:hover {
+        background-color: #189582;
+        color: #fff;
+      }
+    }
+  }
+  .jumbotron {
+    .feature {
+      span {
+        color: $secondaryFontColor;
+        margin-bottom: 0.6rem;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        padding-bottom: 0.4rem;
+      }
+    }
+  }
+  .fixed {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .dark{
+        background-color: rgba($color: #000000, $alpha: .7);
+        padding: 7rem 0;
+        z-index: 1000;
+        .feature {
+            span {
+              color: $secondaryFontColor;
+              margin-bottom: 0.6rem;
+            }
+            h3 {
+              text-transform: uppercase;
+              font-size: 1.3rem;
+              padding-bottom: 0.4rem;
+            }
+          }
+    }
+    .fixed-wrap {
+      clip: rect(0, auto, auto, 0);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -9999;
+      .fixed-dark {
+        background-image: url("../img/fixed/apple.jpg");
+        background-size: cover;
+        background-position: center center;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        will-change: transform;
+        display: table;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
